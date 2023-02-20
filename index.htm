@@ -1,0 +1,57 @@
+<head>
+<title>Emergency Caller Location</title>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=" async defer></script>
+
+<link rel="stylesheet" href="style.css" />
+<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet-src.js"
+			integrity="sha512-I5Hd7FcJ9rZkH7uD01G3AjsuzFy3gqz7HIJvzFZGFt2mrCS4Piw9bYZvCgUE0aiJuiZFYIJIwpbNnDIM6ohTrg=="
+			crossorigin=""
+		></script>
+
+		<!-- 		<script type="text/javascript" src="dist/Leaflet.GoogleMutant.js"></script> -->
+		<script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
+
+</head>
+
+
+
+<body>
+
+<div class="side-wrapper">
+
+  <!-- Rounded switch -->
+<label class="switch" ><input type="checkbox" class="checkbox" id="mode-toggle-switch"><span class="slider round"></span></label><label id="mode-toggle">TRAINING</label><br />
+<label><input type="checkbox" id="settings-gps" class="checkbox settings" checked> GPS</label>
+<input type="checkbox" id="settings-wifi" class="checkbox settings" checked> WIFI</label>
+<input type="checkbox" id="settings-cell" class="checkbox settings" checked> CELL SIGNAL</label>
+<br /><br />
+
+<label>NUMBER:</label> <input type='text' id="number-entry" />&nbsp;<input type="button" class="search-button" value="SEARCH"/><input type="button" class="set-button" value="ASSIGN"/>
+
+
+
+</div>
+
+<div class="select-text">CLICK TO SET LOCATION</div>
+
+<div class="map-wrapper">
+<div id="map" class="map"></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+<script type="text/javascript" src="map.js"></script>
+
+
+</body>
